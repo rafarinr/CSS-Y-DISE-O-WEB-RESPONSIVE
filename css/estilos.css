@@ -1,0 +1,248 @@
+@font-face{
+  font-family:'dancing-script-ot';
+  src: url('../fuentes/dancing-script-ot.ttf');
+}
+body{
+  font-family: 'dancing-script-ot';
+  font-size: 21px;
+  background-color: #02010A;
+  animation: animacion1 0.8s;
+
+}
+
+@-webkit-keyframes animacion1{
+  0%{
+    margin-top: 150px;
+  }
+  60%{
+    margin-top: -5px;
+  }
+  100%{
+    margin-top: 0px;
+  }
+
+}
+
+#contenido{
+  width: 100%;
+  height: 800px;
+
+}
+
+
+/*estilos para la cabecera */
+
+header {
+  background-color:  #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  text-shadow: 2px 2px 2px #02010A;
+  width: 100%;
+  height: 110px;
+}
+header>#nombre{
+  width: 50% auto;
+}
+header>#menu{
+  width: 50% auto;
+}
+
+#inicio{
+  text-decoration: none;
+}
+
+#nombre{
+  float:left;
+  width: 100% auto;
+  padding-left: 15px;
+  font-size: 95%;
+  height: 60px;
+  text-align: center;
+}
+
+#menu{
+  float: right;
+  padding-top: 10px;
+  padding-right: 20px;
+  width: 50% auto;
+}
+
+#menu a {
+  color: white;
+  text-shadow: 2px 2px 2px #02010A;
+  font-size: 1.1em;
+}
+
+#menu li{
+  list-style-type: none;
+  display: inline-block;
+  width: 100px;
+  margin-top: 5px;
+}
+
+/*Estilos para la imagen central*/
+
+section{
+  width: 100% auto;
+  height: 450px;
+}
+img{
+box-shadow: 2px 2px 2px 2px #02010a;
+}
+
+#centro{
+    background-color:  #82c3a6;
+}
+
+
+#imagencentral{
+  width: 100% ;
+  height: 100% ;
+}
+
+#imagencentral>#pinguinos{
+  width: 85%;
+  height: 350px;
+  margin-left: 7%;
+  margin-top: 4%;
+
+}
+
+
+
+
+/*estilos para las imagenes scundarias */
+
+#secundaria{
+  background-color:  #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid grey;
+}
+
+#secundaria > #imagen2, #imagen3 {
+  width: 50%;
+  text-align: center;
+  font-size: 1.2em;
+
+}
+
+#imagen2 > a > #desierto{
+  width: 85%;
+  height: 350px;
+  margin-left: 1%;
+  margin-top: 5%;
+
+}
+
+#imagen3 > a > #koala{
+  width: 85%;
+  height: 350px;
+  margin-left: 1%;
+  margin-top: 5%;
+
+}
+
+#desierto:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+
+#koala:hover{
+  transform: translate(5px, -20px);
+  box-shadow :2px 2px 2px 2px #82c3a6;
+}
+
+/* estilos para el pie de página*/
+
+footer{
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #C6d5c5;
+}
+
+footer>div{
+  width: 20%;
+  padding-left: 5%;
+  font-size:0.9em;
+  font-weight: normal;
+}
+
+
+#bloque3> div>img{
+  box-shadow: none;
+}
+
+
+@media all and (max-width: 900px) {
+	#contenido {
+		width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1000px;
+	}
+  header{
+    height: 200px;
+  }
+  #nombre, #menu{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+  }
+  #menu{
+    padding-top: 50px;
+  }
+
+  #secundaria{
+    height: 900px;
+  }
+
+  #secundaria > #imagen2, #imagen3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+
+  }
+
+  #imagen2 > #desierto{
+  width: 85%;
+  height: 30% auto;
+  margin-left: 8%;
+  margin-right: 8%;
+  }
+
+  #imagen3 > #koala{
+    width: 85%;
+    height: 30% auto;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+
+  footer{
+    height: 1000px;
+  }
+
+  footer>div{
+    width: 100%;
+    display: block;
+    font-size: 1.1em;
+
+  }
+
+
+
+}
+
+
+@media all and (min-width: 900px) {
+  #contenido {
+		width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1000px;
+  }
+}
